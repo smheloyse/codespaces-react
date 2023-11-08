@@ -1,31 +1,22 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fce1dd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Esq {
+  height: 80vh;
+  width: 30%;
+  background-color: #f6c3bd;
+  padding: 20px;
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Corposite {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
+.Principal {
+  height: 100%;
+  width: 100%;
 }
