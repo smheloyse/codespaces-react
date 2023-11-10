@@ -29,3 +29,4 @@ function Corpo () {
 return (
     <CorpoApp> </CorpoApp>
 )}
+export default Corpo;

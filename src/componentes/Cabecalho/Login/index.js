@@ -1,10 +1,10 @@
-import lupa from "../../imagens/lupa.svg"
-import ic from "../../imagens/ic.png"
+import lupa from "../../../imagens/lupa.svg"
+import ic from "../../../imagens/ic.png"
 import styled from "styled-components";
 
 const LoginApp = styled.div`
     .imagem {
-    width: 40px;
+    width: 1em;
     }
 `
 
@@ -19,5 +19,4 @@ function Login() {
         </LoginApp>
     );
 }
-
-export default Login
+export default Login;

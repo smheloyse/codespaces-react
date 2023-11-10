@@ -7,26 +7,29 @@ const MenuCabecalho = styled.ul`
     align-items: center;
     height: 100%;
     width: 60%;
-    padding: 0 10px;
+    padding: 0 20px;
+    font-size: 0.9em;
+    font-family: serif;
+    color: black;
 
     .Menu-iten{
     display: flex;
     }
-    `
-    const ItemMenu = styled.li`
+`
+
+const ItemMenu = styled.li`
     list-style-type: none;
     float: center;
 `
-    
+
 function Menu() {
 
-    return(
-        <MenuCabecalho> 
+    return (
+        <MenuCabecalho>
             {listaMenu.map((item) => (
-            <ItemMenu> {item} </ItemMenu>
+                <ItemMenu> {item} </ItemMenu>
             ))}
         </MenuCabecalho>
     );
 }
-
-export default Menu
+export default Menu;
