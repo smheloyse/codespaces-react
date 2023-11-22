@@ -1,41 +1,52 @@
 import styled from "styled-components";
-import vestido from "../../../imagens/vestido.png"
 import { roupas } from "./dados";
+import { useState } from "react";
+import CardProduto from "./CardProduto";
 
 const PesquisaProdutoStyled = styled.section `
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
 `
 
 const Input = styled.input `
 
 `
 
-const CardProduto = styled.div `
-    display: flex;
+const Titulo = styled.h1`
+    color: ${props => props.corFonte || 'blue'};
 `
 
-const CardInfoProduto = styled.div `
-    display: flex;
-    flex-direction: column;
-`
 
 function PesquisaProduto () {
+    const [roupasEncontradas, setRoupasEncontradas]=useState([])
+
     return (
         <PesquisaProdutoStyled> 
-            <h1> Pesquise o Produto </h1>
-            <Input/>
-            <CardProduto> {
-                roupas.map ((roupa)
-                )}
+            <Titulo corFonte= 'gray'> Pesquise o Produto </Titulo>
 
-                <img src ={roupas} alt= "vestido" />
-                <CardInfoProduto> 
-                    <h2> Nome </h2>
-                    <h3> Preço </h3>
-                    <h3> Tamanho </h3>
-                </CardInfoProduto>
-            </CardProduto>
+            <Input
+                onChange={
+                    evento => {
+                        const textoDigitado = evento.target.value;
+                        const resultadoBusca = roupas.filter(roupas => roupas.nome.includes(textoDigitado))
+                        setRoupasEncontradas(resultadoBusca)
+                    }
+                }
+            />
+
+            {
+                roupasEncontradas.map (roupas=> (
+                    <CardProduto 
+                    nome = {roupas.nome}
+                    valor = {roupas.valor}
+                    tamanho = {roupas.tamanho}
+                    />  
+
+                ))
+            }
 
         </PesquisaProdutoStyled>
     )

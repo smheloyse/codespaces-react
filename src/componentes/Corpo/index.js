@@ -24,9 +24,3 @@ const CorpoApp = styled.div`
     width: 100%;
   }
 `
-
-function Corpo () {
-return (
-    <CorpoApp> </CorpoApp>
-)}
-export default Corpo;

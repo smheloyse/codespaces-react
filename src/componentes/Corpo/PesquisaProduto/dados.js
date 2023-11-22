@@ -1,24 +1,38 @@
 import vestido from "../../../imagens/vestido.png"
+import vestidoflor from "../../../imagens/vestidoflor.png"
+import vestidover from "../../../imagens/vestidover.png"
+import vestverm from "../../../imagens/vestverm.png"
 
 export const roupas = [
     {
         id: 1,
         nome: "Vestido Florido",
         valor: "R$50,00",
-        imagem: vestido
+        imagem: vestido,
+        tamanho: "P"
     },
 
     {
         id: 2,
-        nome: "Vestido Liso",
+        nome: "Vestido Flores",
         valor: "R$50,00",
-        imagem: vestido
+        imagem: vestidoflor,
+        tamanho: "P"
     },
 
     {
         id: 3,
-        nome: "Vestido Listrado",
+        nome: "Vestido Vermelho Liso",
         valor: "R$50,00",
-        imagem: vestido
+        imagem: vestidover,
+        tamanho: "P"
+    },
+
+    {
+        id: 4,
+        nome: "Vestido Vermelho",
+        valor: "R$50,00",
+        imagem: vestverm,
+        tamanho: "P"
     }
 ]
