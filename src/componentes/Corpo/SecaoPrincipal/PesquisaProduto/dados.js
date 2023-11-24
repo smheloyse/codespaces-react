@@ -1,7 +1,7 @@
-import vestido from "../../../imagens/vestido.png"
-import vestidoflor from "../../../imagens/vestidoflor.png"
-import vestidover from "../../../imagens/vestidover.png"
-import vestverm from "../../../imagens/vestverm.png"
+import vestido from "../../../../imagens/vestido.png"
+import vestidoflor from "../../../../imagens/vestidoflor.png"
+import vestidover from "../../../../imagens/vestidover.png"
+import vestverm from "../../../../imagens/vestverm.png"
 
 export const roupas = [
     {
@@ -9,7 +9,7 @@ export const roupas = [
         nome: "Vestido Florido",
         valor: "R$50,00",
         imagem: vestido,
-        tamanho: "P"
+        tamanho: "P - M - G"
     },
 
     {
@@ -17,7 +17,7 @@ export const roupas = [
         nome: "Vestido Flores",
         valor: "R$50,00",
         imagem: vestidoflor,
-        tamanho: "P"
+        tamanho: "P - M - G"
     },
 
     {
@@ -25,7 +25,7 @@ export const roupas = [
         nome: "Vestido Vermelho Liso",
         valor: "R$50,00",
         imagem: vestidover,
-        tamanho: "P"
+        tamanho: "P - M - G"
     },
 
     {
@@ -33,6 +33,6 @@ export const roupas = [
         nome: "Vestido Vermelho",
         valor: "R$50,00",
         imagem: vestverm,
-        tamanho: "P"
+        tamanho: "P - M - G"
     }
 ]

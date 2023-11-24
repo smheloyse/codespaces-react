@@ -1,14 +1,15 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
-import vestido from '../../../imagens/vestido.png';
 import vestidoflor from '../../../imagens/vestidoflor.png';
 import vestverm from '../../../imagens/vestverm.png';
-import vestidoverm from '../../../imagens/vestidover.png';
+import vestidoverm from '../../../imagens/vestlongo.png';
 
 const CarrosselStyled = styled(Carousel)`
     overflow: hidden;
-    height: 40vh;
-    width: 13vw;
+    height: 80%;
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 10px;
     img{
         object-fit: cover;
     }
@@ -16,13 +17,7 @@ const CarrosselStyled = styled(Carousel)`
 
 function CarrosselBootStrap(){
     return(
-        <CarrosselStyled> 
-            
-            <Carousel.Item>
-                <img className= "d-block w-100"
-                src={vestido} alt= ""/>
-            </Carousel.Item>
-
+        <CarrosselStyled>  
             <Carousel.Item>
                 <img className="d-block w-100"
                 src={vestidoflor} alt= ""/>

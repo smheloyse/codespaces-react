@@ -1,14 +1,20 @@
 import styled from "styled-components";
-import { roupas } from "./dados";
+import { roupas } from "./dados.js";
 import { useState } from "react";
-import CardProduto from "./CardProduto";
+import CardProduto from "./CardProduto.js";
 
 const PesquisaProdutoStyled = styled.section `
+    width: 80vw;
+    height: calc(100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100%;
-    width: 100%;
+    gap: 3vh;
+    h1{
+        font-size:4vw;
+        margin: 0;
+        padding: 0;
+    }    
 `
 
 const Input = styled.input `
@@ -16,16 +22,18 @@ const Input = styled.input `
 `
 
 const Titulo = styled.h1`
-    color: ${props => props.corFonte || 'blue'};
+    color : ${props => props.cor || 'purple'};
+    font-size: ${props => props.tamanhoFonte || '20px'};
+    font-weight: bold;
 `
 
 
 function PesquisaProduto () {
-    const [roupasEncontradas, setRoupasEncontradas]=useState([])
+    const [roupasEncontradas, setRoupasEncontradas]=useState([]);
 
     return (
         <PesquisaProdutoStyled> 
-            <Titulo corFonte= 'gray'> Pesquise o Produto </Titulo>
+            <Titulo> Pesquise o Produto: </Titulo>
 
             <Input
                 onChange={
