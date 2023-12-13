@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const InputPesquisa = styled.input`
     background: transparent;
-    border: 5px black;
+    border: 6px #fcebb5;
     padding:20px 140px;
     border-radius:10px;
     width:60%;
